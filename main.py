@@ -1,7 +1,7 @@
 import asyncio
 import logging
 import sys
-from ..app import main
+from app import main
 
 
 
