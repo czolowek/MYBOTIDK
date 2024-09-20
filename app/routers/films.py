@@ -26,9 +26,9 @@ async def show_films_command(message: Message, state: FSMContext) -> None:
        text="Виберіть будь-який фільм",
        reply_markup=keyboard,
    )
+   
 @film_router.message(Command("filmcreate"))
 @film_router.message(F.text.casefold() == "filmcreate")
-
 @film_router.message(F.text.casefold() == "create film")
 async def create_film_command(message: Message, state: FSMContext) -> None:
    await state.clear()
